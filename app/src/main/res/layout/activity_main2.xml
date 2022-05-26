@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_unikom_kuning" />
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img"
+        android:text="Form Biodata Mahasiswa"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:id="@+id/editNIM"
+    android:layout_below="@+id/judul"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Lengkap"
+        android:id="@+id/editNama"
+        android:layout_below="@+id/editNIM"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kelas"
+        android:id="@+id/editKelas"
+        android:layout_below="@+id/editNama"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Program Studi "
+        android:id="@+id/editStudi"
+        android:layout_below="@+id/editKelas"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editStudi"
+        android:id="@+id/btnSimpan"
+        android:text="SIMPAN DATA"/>
+    <Button
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/btnSimpan"
+    android:id="@+id/btnUpdate"
+    android:text="EDIT DATA"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnUpdate"
+        android:id="@+id/btnDelete"
+        android:text="HAPUS DATA"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:id="@+id/btnTampil"
+        android:text="TAMPILKAN SELURUH DATA"/>
+</RelativeLayout>
